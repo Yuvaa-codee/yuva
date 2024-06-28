@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(5bg.png) ;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.qcontainer {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(9, 75, 255, 0.401);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.card p {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.qbuttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register {
+    background-color: #007bff;
+    color: white;
+}
+
+.learn-more {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.left-menu {
+    width: 30%;
+}
+
+.left-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-menu li {
+    margin: 10px 0;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.left-menu a:hover {
+    text-decoration: underline;
+}
+
+.right-content {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
